@@ -7,15 +7,24 @@
 </head>
 <body>
 	<div id="wrapper">
-		<div id="display">00:00</div>
-		<div id="buttons">
-			<button id="start">Start</button>
-			<button id="stop">Stop</button>
-			<button id ="reset">Reset</button>
-			<button id="lap">Lap</button>
+		<div id="form">
+<!-- 			<form> -->
+				<label for="employee">Employee:</label>
+				<input type="text" name="employee" id="employee">
+				<label for="quantity">Quantity:</label>
+				<input type="number" name="quantity" id="quantity">
+				<div id="display">00:00</div>
+				<div id="buttons">
+					<button id="start">Start</button>
+					<button id="stop">Stop</button>
+					<button id ="reset">Reset</button>
+					<button id="lap">Submit</button>
+				</div>
+<!-- 			</form> -->
 		</div>
 		<div id="laps"></div>
 	</div>
+	<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
 	<!-- jQuery -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/app.js"></script>

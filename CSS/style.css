@@ -19,9 +19,19 @@ body {
 	text-align: center;
 }
 
+label {
+  font-family: monospace;
+	color: green;
+}
+
 button {
+  font-family: monospace;
 	width: 100px;
 	height: 50px;
+}
+
+#form {
+	text-align: center;
 }
 
 #laps {
