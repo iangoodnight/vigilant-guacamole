@@ -37,10 +37,11 @@ window.onload = function() {
 		$("#display").text("00:00");
 
 		stopwatch.time = 0;
+		stopwatch.stop();
 
 	});
-	$("#stop").on("click", stopwatch.stop);
-	$("#reset").on("click", stopwatch.reset);
+	// $("#stop").on("click", stopwatch.stop);
+	// $("#reset").on("click", stopwatch.reset);
 	$("#start").on("click", stopwatch.start);
 };
 
@@ -68,11 +69,15 @@ var stopwatch = {
 			intervalId = setInterval(stopwatch.count, 1000);
 			clockRunning = true;
 		}
+
+		$("#lap").focus();
 	},
 	stop: function() {
 
 		clearInterval(intervalId);
 		clockRunning = false;
+
+		$("#employee").focus();
 
 	},
 	recordLap: function() {
