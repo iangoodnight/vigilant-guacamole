@@ -1,6 +1,6 @@
 # vigilant-guacamole
 
-Stop watch app using google sheets for data persistence.
+Stop watch app using Firebase for data persistence and google sheets for data analytics.
 
 Stop watch interface: [Here](https://iangoodnight.github.io/vigilant-guacamole/)
 
