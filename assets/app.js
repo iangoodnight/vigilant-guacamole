@@ -42,7 +42,22 @@ window.onload = function() {
 	});
 	// $("#stop").on("click", stopwatch.stop);
 	// $("#reset").on("click", stopwatch.reset);
-	$("#start").on("click", stopwatch.start);
+	$("#start").on("click", function(){
+
+		var employee = $("#employee").val().trim();
+		var quantity = $("#quantity").val().trim();
+
+		if (employee === ""  || quantity === "") {
+
+			alert("Please enter employee number and quantity to proceed.");
+
+		} else {
+		
+			stopwatch.start();
+		}
+
+	});
+
 };
 
 var intervalId;
