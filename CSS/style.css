@@ -6,8 +6,10 @@ body {
 	font-family: monospace;
 	font-size: 120px;
 	color: green;
-	text-align: center;
+	text-align: right;
 	background: black;
+	position: relative;
+	top: -20px;
 }
 
 #wrapper {
@@ -16,12 +18,14 @@ body {
 }
 
 #buttons {
+	padding: 20px 0px 0px 10px;
 	text-align: center;
+	vertical-align: -10px;
 }
 
 label {
   font-family: monospace;
-	color: green;
+  color: green;
 }
 
 button {
@@ -31,7 +35,7 @@ button {
 }
 
 #form {
-	text-align: center;
+	text-align: left;
 }
 
 #laps {

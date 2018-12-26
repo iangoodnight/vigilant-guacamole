@@ -19,6 +19,8 @@ window.onload = function() {
 		var quantity = $("#quantity").val().trim();
 		var time = $("#display").text();
 
+		$("#display").css('color', 'green');
+
 		console.log("employee: " + employee + "\nquantity: " + quantity + "\ntime: " + time);
 
 		var newEntry = {
@@ -46,6 +48,8 @@ window.onload = function() {
 
 		var employee = $("#employee").val().trim();
 		var quantity = $("#quantity").val().trim();
+
+		$("#display").css('color', 'red');
 
 		if (employee === ""  || quantity === "") {
 
