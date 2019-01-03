@@ -55,8 +55,12 @@ window.onload = function() {
 
 			alert("Please enter employee number and quantity to proceed.");
 
+		} else if (employee.substr(0,1) !== "#" ) { 
+
+			alert("Employee number must be of the form '#11' (pound sign followed by numerals).");
+
 		} else {
-		
+
 			stopwatch.start();
 		}
 
