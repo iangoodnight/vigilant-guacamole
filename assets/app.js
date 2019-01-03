@@ -60,8 +60,11 @@ window.onload = function() {
 			alert("Employee number must be of the form '#11' (pound sign followed by numerals).");
 
 		} else {
+			if (employee !== "" && quantity !== "" && employee.substr(0,1) === "#") {
 
-			stopwatch.start();
+				stopwatch.start();
+				
+			};
 		}
 
 	});
