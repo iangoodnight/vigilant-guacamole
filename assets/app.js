@@ -32,7 +32,12 @@ window.onload = function() {
 		
 		}
 
-		database.ref().push(newEntry);
+        if (employee !== "" && quantity !== "") {
+        	database.ref().push(newEntry);
+        } else {
+        	alert("Please enter employee ID and qunatity to get started");
+        };
+
 
 		$("#employee").val("");
 		$("#quantity").val("");
