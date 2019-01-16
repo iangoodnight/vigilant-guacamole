@@ -35,7 +35,7 @@ window.onload = function() {
         if (employee !== "" && quantity !== "") {
         	database.ref().push(newEntry);
         } else {
-        	alert("Please enter employee ID and qunatity to get started");
+        	alert("Please enter employee ID and quantity to get started");
         };
 
 
